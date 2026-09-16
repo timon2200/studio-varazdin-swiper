@@ -1,5 +1,5 @@
 {
-  "totalVotes": 28,
+  "totalVotes": 41,
   "uniqueVoters": [
     "usr_4t5qhhjpmu4r72bh"
   ],
@@ -20,7 +20,7 @@
       "category": "Selected",
       "image": "assets/optimized/Selected - SV Print - Fisheye Ambition Black.webp",
       "likes": 1,
-      "passes": 0,
+      "passes": 1,
       "superlikes": 0,
       "score": 1
     },
@@ -30,7 +30,7 @@
       "category": "Selected",
       "image": "assets/optimized/Selected - CV Tee - Creative Collective Croatia cCc.webp",
       "likes": 0,
-      "passes": 0,
+      "passes": 1,
       "superlikes": 1,
       "score": 3
     },
@@ -40,7 +40,7 @@
       "category": "Selected",
       "image": "assets/optimized/Selected - magnific_write-studio-varazdin-ins_mErGSbLhJQ.webp",
       "likes": 1,
-      "passes": 0,
+      "passes": 1,
       "superlikes": 0,
       "score": 1
     },
@@ -49,10 +49,10 @@
       "title": "Garda Purgar Sigil White",
       "category": "Selected",
       "image": "assets/optimized/Selected - SV Print - Garda Purgar Sigil White.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-002": {
       "id": "sv-002",
@@ -60,7 +60,7 @@
       "category": "Selected",
       "image": "assets/optimized/Selected - CV Tee - Creative Block Franjevacki Toranj copy.webp",
       "likes": 0,
-      "passes": 1,
+      "passes": 2,
       "superlikes": 0,
       "score": 0
     },
@@ -69,10 +69,10 @@
       "title": "Visually Articulate Skyline",
       "category": "Selected",
       "image": "assets/optimized/Selected - CV Tee - Visually Articulate Skyline.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-009": {
       "id": "sv-009",
@@ -80,7 +80,7 @@
       "category": "Selected",
       "image": "assets/optimized/Selected - SV Artwear - Inspired By Craft Black.webp",
       "likes": 0,
-      "passes": 1,
+      "passes": 2,
       "superlikes": 0,
       "score": 0
     },
@@ -89,10 +89,10 @@
       "title": "Teratomorpha Sigil White",
       "category": "Selected",
       "image": "assets/optimized/Selected - SV Artwear - Teratomorpha Sigil White.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-005": {
       "id": "sv-005",
@@ -109,10 +109,10 @@
       "title": "Knight Sigil White",
       "category": "Selected",
       "image": "assets/optimized/Selected - SV Print - Knight Sigil White.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-019": {
       "id": "sv-019",
@@ -129,30 +129,30 @@
       "title": "Inspired By Studio Black",
       "category": "Selected",
       "image": "assets/optimized/Selected - SV Print - Inspired By Studio Black.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-003": {
       "id": "sv-003",
       "title": "Creative Block Franjevacki Toranj",
       "category": "Selected",
       "image": "assets/optimized/Selected - CV Tee - Creative Block Franjevacki Toranj.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-015": {
       "id": "sv-015",
       "title": "Knights Vow Cream",
       "category": "Selected",
       "image": "assets/optimized/Selected - SV Print - Knights Vow Cream.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-006": {
       "id": "sv-006",
@@ -169,10 +169,10 @@
       "title": "Elon Copy",
       "category": "Selected",
       "image": "assets/optimized/Selected - magnific_extremely-vertically-elon_0eajhhPTfW copy.webp",
-      "likes": 0,
+      "likes": 1,
       "passes": 1,
       "superlikes": 0,
-      "score": 0
+      "score": 1
     },
     "sv-007": {
       "id": "sv-007",
@@ -278,6 +278,97 @@
   "recentFeed": [
     {
       "user": "Ti",
+      "action": "glasao za",
+      "item": "Knights Vow Cream",
+      "time": "upravo sada",
+      "timestamp": 1789602893
+    },
+    {
+      "user": "Ti",
+      "action": "glasao za",
+      "item": "Visually Articulate Skyline",
+      "time": "upravo sada",
+      "timestamp": 1789602892
+    },
+    {
+      "user": "Ti",
+      "action": "glasao za",
+      "item": "Creative Block Franjevacki Toranj",
+      "time": "upravo sada",
+      "timestamp": 1789602891
+    },
+    {
+      "user": "Ti",
+      "action": "preskočio",
+      "item": "Fisheye Ambition Black",
+      "time": "upravo sada",
+      "timestamp": 1789602888
+    },
+    {
+      "user": "Ti",
+      "action": "preskočio",
+      "item": "Creative Block Franjevacki Toranj Copy",
+      "time": "upravo sada",
+      "timestamp": 1789602887
+    },
+    {
+      "user": "Ti",
+      "action": "glasao za",
+      "item": "Garda Purgar Sigil White",
+      "time": "upravo sada",
+      "timestamp": 1789602886
+    },
+    {
+      "user": "Ti",
+      "action": "glasao za",
+      "item": "Teratomorpha Sigil White",
+      "time": "upravo sada",
+      "timestamp": 1789602885
+    },
+    {
+      "user": "Ti",
+      "action": "preskočio",
+      "item": "Creative Collective Croatia Ccc",
+      "time": "upravo sada",
+      "timestamp": 1789602884
+    },
+    {
+      "user": "Ti",
+      "action": "preskočio",
+      "item": "Write Studio Ins",
+      "time": "upravo sada",
+      "timestamp": 1789602883
+    },
+    {
+      "user": "Ti",
+      "action": "preskočio",
+      "item": "Inspired By Craft Black",
+      "time": "upravo sada",
+      "timestamp": 1789602882
+    },
+    {
+      "user": "Ti",
+      "action": "glasao za",
+      "item": "Inspired By Studio Black",
+      "time": "upravo sada",
+      "timestamp": 1789602881
+    },
+    {
+      "user": "Ti",
+      "action": "glasao za",
+      "item": "Elon Copy",
+      "time": "upravo sada",
+      "timestamp": 1789602880
+    },
+    {
+      "user": "Ti",
+      "action": "glasao za",
+      "item": "Knight Sigil White",
+      "time": "upravo sada",
+      "timestamp": 1789602879
+    },
+    {
+      "user": "Ti",
       "action": "SUPERLAJKAO",
       "item": "Silent Knight Studio Black",
       "time": "upravo sada",
@@ -324,97 +415,6 @@
       "item": "SV Single 02 - Praying Knight Back",
       "time": "upravo sada",
       "timestamp": 1789602807
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Heritage Combo 02 - Angels Comix Back",
-      "time": "upravo sada",
-      "timestamp": 1789602806
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Maker Archives White",
-      "time": "upravo sada",
-      "timestamp": 1789602806
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Creative Block 1181",
-      "time": "upravo sada",
-      "timestamp": 1789602806
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Not Overthinking Storyboard Collage",
-      "time": "upravo sada",
-      "timestamp": 1789602806
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Elon Copy",
-      "time": "upravo sada",
-      "timestamp": 1789602806
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Knight Thumbs Up Water",
-      "time": "upravo sada",
-      "timestamp": 1789602806
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Knights Vow Cream",
-      "time": "upravo sada",
-      "timestamp": 1789602806
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Creative Block Franjevacki Toranj",
-      "time": "upravo sada",
-      "timestamp": 1789602805
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Inspired By Studio Black",
-      "time": "upravo sada",
-      "timestamp": 1789602805
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Remove The Text Up Top On",
-      "time": "upravo sada",
-      "timestamp": 1789602805
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Knight Sigil White",
-      "time": "upravo sada",
-      "timestamp": 1789602805
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Good Work Great Work Folk Silhouette",
-      "time": "upravo sada",
-      "timestamp": 1789602805
-    },
-    {
-      "user": "Ti",
-      "action": "preskočio",
-      "item": "Teratomorpha Sigil White",
-      "time": "upravo sada",
-      "timestamp": 1789602804
     }
   ]
 }
