@@ -108,14 +108,16 @@ export class CardEngine {
       card.innerHTML = `
         <div class="card-inner">
           <div class="card-photo-wrapper">
-            <picture>
-              <source srcset="${optSrc}" type="image/webp">
-              <img src="${fallbackSrc}" 
-                   class="tshirt-artwork" 
-                   alt="Studio Varaždin T-Shirt: ${data.title}" 
-                   draggable="false" 
-                   ${index > 2 ? 'loading="lazy"' : 'fetchpriority="high"'}>
-            </picture>
+            <div class="artwork-frame">
+              <picture>
+                <source srcset="${optSrc}" type="image/webp">
+                <img src="${fallbackSrc}" 
+                     class="tshirt-artwork" 
+                     alt="Studio Varaždin T-Shirt: ${data.title}" 
+                     draggable="false" 
+                     ${index > 2 ? 'loading="lazy"' : 'fetchpriority="high"'}>
+              </picture>
+            </div>
             
             <!-- Dynamic Interaction Stamps -->
             <div class="stamp stamp-like"><span class="stamp-text">SVIĐA MI SE</span></div>
