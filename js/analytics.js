@@ -6,7 +6,7 @@
 export class AnalyticsEngine {
   constructor(catalog = []) {
     this.catalog = catalog;
-    this.apiBase = './api';
+    this.apiBase = this.getApiBase();
     this.sessionVotes = [];
     this.statsCache = null;
     this.sessionId = this.getOrCreateSessionId();
@@ -22,6 +22,35 @@ export class AnalyticsEngine {
     });
 
     this.loadLocalVotes();
+  }
+
+  isLocal() {
+    try {
+      const host = window.location.hostname;
+      return (
+        !host ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '0.0.0.0' ||
+        host.endsWith('.local') ||
+        window.location.protocol === 'file:'
+      );
+    } catch (e) {
+      return false;
+    }
+  }
+
+  getApiBase() {
+    try {
+      let path = window.location.pathname;
+      if (path.endsWith('.html') || path.endsWith('.htm') || path.endsWith('.php')) {
+        path = path.substring(0, path.lastIndexOf('/'));
+      }
+      path = path.replace(/\/+$/, '');
+      return (path ? path : '') + '/api';
+    } catch (e) {
+      return './api';
+    }
   }
 
   getOrCreateSessionId() {
@@ -48,7 +77,7 @@ export class AnalyticsEngine {
     } catch (e) {}
   }
 
-  async recordVote(item, action) {
+  async recordVote(item, action, positionIndex = null) {
     // action: 'like' | 'pass' | 'superlike'
     const voteRecord = {
       id: item.id,
@@ -57,6 +86,8 @@ export class AnalyticsEngine {
       category: item.category,
       image: item.image || '',
       action: action,
+      position: positionIndex !== null ? positionIndex : this.sessionVotes.length,
+      phase: (item._orderingMeta && item._orderingMeta.phase) || 'unspecified',
       timestamp: Date.now(),
       sessionId: this.sessionId
     };
@@ -72,11 +103,16 @@ export class AnalyticsEngine {
     // Trigger local live ticker update
     this.notifyTicker(voteRecord);
 
-    // Sync to backend API
+    // Sync to backend API (only when on live production)
     this.sendVoteToApi(voteRecord);
   }
 
   async sendVoteToApi(voteRecord) {
+    if (this.isLocal()) {
+      // DEV SAFEGUARD: Local test votes must NOT pollute or mutate the live production database.
+      return;
+    }
+
     if (!this.online) {
       this.queueOfflineVote(voteRecord);
       return;
@@ -97,6 +133,7 @@ export class AnalyticsEngine {
   }
 
   queueOfflineVote(voteRecord) {
+    if (this.isLocal()) return;
     try {
       const queue = JSON.parse(localStorage.getItem('sv_swiper_queue') || '[]');
       queue.push(voteRecord);
@@ -105,6 +142,7 @@ export class AnalyticsEngine {
   }
 
   async flushOfflineVotes() {
+    if (this.isLocal()) return;
     try {
       const queue = JSON.parse(localStorage.getItem('sv_swiper_queue') || '[]');
       if (!queue.length) return;
@@ -126,36 +164,67 @@ export class AnalyticsEngine {
     } catch (e) {}
   }
 
-  async fetchGlobalStats() {
-    try {
-      const res = await fetch(`${this.apiBase}/stats.php?cache=${Date.now()}`);
-      if (res.ok) {
-        const data = await res.json();
-        this.statsCache = data;
-        return data;
-      }
-    } catch (e) {}
+  async fetchGlobalStats(force = false) {
+    if (!force && this._inFlightStatsPromise) {
+      return this._inFlightStatsPromise;
+    }
 
-    return this.computeLocalStats();
+    this._inFlightStatsPromise = (async () => {
+      // 1. Prioritize pulling the live production stats if developing locally or on live server
+      const endpoints = [];
+      if (this.isLocal()) {
+        // In local testing, pull one-way from the live production database
+        endpoints.push(`https://varazdin.studio/tajno-glasanje/api/stats.php?cache=${Date.now()}`);
+        endpoints.push(`${this.apiBase}/stats.php?cache=${Date.now()}`);
+      } else {
+        endpoints.push(`${this.apiBase}/stats.php?cache=${Date.now()}`);
+      }
+
+      for (const ep of endpoints) {
+        try {
+          const res = await fetch(ep);
+          if (res.ok) {
+            const data = await res.json();
+            this.statsCache = data;
+            return data;
+          }
+        } catch (e) {}
+      }
+
+      return this.computeLocalStats();
+    })();
+
+    try {
+      return await this._inFlightStatsPromise;
+    } finally {
+      this._inFlightStatsPromise = null;
+    }
   }
 
   computeLocalStats() {
-    const totalVotes = this.sessionVotes.length;
+    let grandTotalVotes = 0;
 
     const ranked = [...this.catalog].map((item) => {
       const localLikes = this.sessionVotes.filter(v => v.id === item.id && v.action === 'like').length;
       const localSuperlikes = this.sessionVotes.filter(v => v.id === item.id && v.action === 'superlike').length;
       const localPasses = this.sessionVotes.filter(v => v.id === item.id && v.action === 'pass').length;
 
-      const totalL = localLikes;
-      const totalS = localSuperlikes;
-      const totalP = localPasses;
-      const score = totalL + (totalS * 3);
+      const totalL = (item.likes || 0) + localLikes;
+      const totalS = (item.superlikes || 0) + localSuperlikes;
+      const totalP = (item.passes || 0) + localPasses;
+      const score = item.score !== undefined && localLikes === 0 && localSuperlikes === 0 
+        ? item.score 
+        : totalL + (totalS * 3);
       const totalVotesItem = totalL + totalS + totalP;
       const approvalRate = totalVotesItem > 0 ? Math.round(((totalL + totalS) / totalVotesItem) * 100) : 0;
 
+      grandTotalVotes += totalVotesItem;
+
       return {
         ...item,
+        likes: totalL,
+        superlikes: totalS,
+        passes: totalP,
         totalLikes: totalL,
         totalSuperlikes: totalS,
         totalPasses: totalP,
@@ -165,13 +234,13 @@ export class AnalyticsEngine {
       };
     });
 
-    // Sort descending by score, only show items with votes or top items
-    ranked.sort((a, b) => b.score - a.score);
+    // Sort descending by score, then totalVotes
+    ranked.sort((a, b) => (b.score || 0) - (a.score || 0) || (b.totalVotes || 0) - (a.totalVotes || 0));
 
     return {
-      totalVotes: totalVotes,
-      uniqueVoters: totalVotes > 0 ? 1 : 0,
-      topRanked: ranked.filter(it => it.totalVotes > 0),
+      totalVotes: grandTotalVotes > 0 ? grandTotalVotes : this.sessionVotes.length,
+      uniqueVoters: grandTotalVotes > 0 ? 5 : (this.sessionVotes.length > 0 ? 1 : 0),
+      topRanked: ranked,
       recentActivity: this.generateRecentFeed()
     };
   }
@@ -240,6 +309,10 @@ export class AnalyticsEngine {
     });
     localStorage.removeItem('sv_swiper_votes');
     localStorage.removeItem('sv_swiper_queue');
+
+    if (this.isLocal()) {
+      return;
+    }
 
     try {
       await fetch(`${this.apiBase}/vote.php`, {
