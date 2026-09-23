@@ -19,22 +19,25 @@ export class CatalogCurator {
     this.holdGesture = globalHoldGesture;
     this.masterCatalog = (Array.isArray(MASTER_CATALOG) && MASTER_CATALOG.length > 0) 
       ? [...MASTER_CATALOG] 
-      : [...ACTIVE_CATALOG];
+      : ((Array.isArray(ACTIVE_CATALOG) && ACTIVE_CATALOG.length > 0) ? [...ACTIVE_CATALOG] : []);
     
     // Initial active selection: start from local bundle or localStorage draft
-    let initialSelected = new Set(ACTIVE_CATALOG.map(it => it.id));
+    let initialSelected = new Set(this.masterCatalog.map(it => it.id));
     try {
       const rawStored = localStorage.getItem("sv_curated_active_ids");
       if (rawStored !== null) {
         const parsed = JSON.parse(rawStored);
-        if (Array.isArray(parsed)) {
-          initialSelected = new Set(parsed);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          const masterIdSet = new Set(this.masterCatalog.map(it => it.id));
+          const valid = parsed.filter(id => masterIdSet.has(id));
+          if (valid.length > 0) {
+            initialSelected = new Set(valid);
+          }
         }
       }
     } catch (e) {}
 
-    const masterIdSet = new Set(this.masterCatalog.map(it => it.id));
-    this.selectedIds = new Set(Array.from(initialSelected).filter(id => masterIdSet.has(id)));
+    this.selectedIds = initialSelected;
     this.activeCategory = "ALL";
     this.searchQuery = "";
     this.sortOption = "score-desc"; // 'score-desc' | 'default' | 'likes-desc' | 'super-desc' | 'votes-desc' | 'approval-desc' | 'title-asc'
@@ -145,13 +148,40 @@ export class CatalogCurator {
           if (Array.isArray(data.master) && data.master.length > 0) {
             this.masterCatalog = data.master;
           }
-          if (Array.isArray(data.active)) {
+          if (Array.isArray(data.activeIds) || Array.isArray(data.active)) {
+            const rawActiveIds = Array.isArray(data.activeIds) 
+              ? data.activeIds 
+              : data.active.map(it => it.id);
             const masterIdSet = new Set(this.masterCatalog.map(it => it.id));
-            const validActiveIds = data.active.map(it => it.id).filter(id => masterIdSet.has(id));
-            this.selectedIds = new Set(validActiveIds);
+            let validActiveIds = rawActiveIds.filter(id => masterIdSet.has(id));
+            if (validActiveIds.length === 0 && this.masterCatalog.length > 0) {
+              validActiveIds = this.masterCatalog.map(it => it.id);
+            }
+
+            // Check if client has an intentional local curated draft that shouldn't be wiped by full-catalog defaults
+            let localDraft = null;
             try {
-              localStorage.setItem("sv_curated_active_ids", JSON.stringify(Array.from(this.selectedIds)));
+              const rawLocal = localStorage.getItem("sv_curated_active_ids");
+              if (rawLocal) {
+                const parsed = JSON.parse(rawLocal);
+                if (Array.isArray(parsed) && parsed.length > 0 && parsed.length < this.masterCatalog.length) {
+                  const validLocal = parsed.filter(id => masterIdSet.has(id));
+                  if (validLocal.length > 0) localDraft = validLocal;
+                }
+              }
             } catch (e) {}
+
+            // If server returned default uncurated full catalog but user has an active curated draft locally, preserve and auto-sync to server
+            if (localDraft && validActiveIds.length === this.masterCatalog.length) {
+              this.selectedIds = new Set(localDraft);
+              this.scheduleAutoSave();
+            } else {
+              this.selectedIds = new Set(validActiveIds);
+              try {
+                localStorage.setItem("sv_curated_active_ids", JSON.stringify(Array.from(this.selectedIds)));
+              } catch (e) {}
+            }
+
             this.render();
             if (showToast) {
               this.showToast(`✓ Sinkronizirano sa serverom: aktivno ${this.selectedIds.size} majica.`);
@@ -164,6 +194,37 @@ export class CatalogCurator {
       if (showToast) {
         this.showToast("ℹ️ Server API nije dostupan. Koristi se lokalni špil.");
       }
+    }
+  }
+
+  scheduleAutoSave() {
+    clearTimeout(this._autoSaveTimer);
+    this._autoSaveTimer = setTimeout(() => {
+      this.silentSaveCuratedCatalog();
+    }, 600);
+  }
+
+  async silentSaveCuratedCatalog() {
+    const activeItems = this.masterCatalog.filter(it => this.selectedIds.has(it.id));
+    const activeIdsArray = Array.from(this.selectedIds);
+    try {
+      localStorage.setItem("sv_curated_active_ids", JSON.stringify(activeIdsArray));
+    } catch (e) {}
+
+    try {
+      await fetch("api/curate.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "no-store"
+        },
+        body: JSON.stringify({
+          activeIds: activeIdsArray,
+          activeItems: activeItems
+        })
+      });
+    } catch (e) {
+      // Offline / network fallback
     }
   }
 
@@ -224,6 +285,7 @@ export class CatalogCurator {
     document.getElementById("btnTop20")?.addEventListener("click", () => this.selectTopFinalists(20));
     document.getElementById("btnTop30")?.addEventListener("click", () => this.selectTopFinalists(30));
     document.getElementById("btnTop50")?.addEventListener("click", () => this.selectTopFinalists(50));
+    document.getElementById("btnPointsGt0")?.addEventListener("click", () => this.selectItemsWithMinScore(1));
     document.getElementById("btnSelectAll")?.addEventListener("click", () => this.selectAllFiltered(true));
     document.getElementById("btnDeselectAll")?.addEventListener("click", () => this.selectAllFiltered(false));
     document.getElementById("btnInvert")?.addEventListener("click", () => this.invertFiltered());
@@ -338,6 +400,7 @@ export class CatalogCurator {
       const score = st.score !== undefined ? st.score : (likes + (superlikes * 3));
       const totalVotes = st.totalVotes !== undefined ? st.totalVotes : (likes + superlikes + passes);
       const approvalRate = st.approvalRate !== undefined ? st.approvalRate : (totalVotes > 0 ? Math.round(((likes + superlikes) / totalVotes) * 100) : 0);
+      const bayesianMean = st.bayesianMean !== undefined ? st.bayesianMean : (item.bayesianMean || 0);
 
       return {
         ...item,
@@ -346,7 +409,8 @@ export class CatalogCurator {
         _statPasses: passes,
         _statScore: score,
         _statTotalVotes: totalVotes,
-        _statApproval: approvalRate
+        _statApproval: approvalRate,
+        _statBayesian: bayesianMean
       };
     });
 
@@ -361,11 +425,13 @@ export class CatalogCurator {
         }
       }
 
-      // Vote Filter (all, voted, top20, commented, unvoted)
+      // Vote Filter (all, voted, top20, commented, zeropts, unvoted)
       if (this.voteFilter === "voted") {
         if (item._statTotalVotes <= 0) return false;
       } else if (this.voteFilter === "unvoted") {
         if (item._statTotalVotes > 0) return false;
+      } else if (this.voteFilter === "zeropts") {
+        if ((item._statScore || 0) > 0) return false;
       } else if (this.voteFilter === "commented") {
         if (!this.commentsManager || !this.commentsManager.hasComment(item.id)) return false;
       }
@@ -382,15 +448,15 @@ export class CatalogCurator {
 
     // Sorting
     if (this.sortOption === "score-desc" || this.voteFilter === "top20") {
-      filtered.sort((a, b) => b._statScore - a._statScore || b._statTotalVotes - a._statTotalVotes);
+      filtered.sort((a, b) => b._statScore - a._statScore || (b._statBayesian || 0) - (a._statBayesian || 0) || (b._statApproval || 0) - (a._statApproval || 0) || b._statTotalVotes - a._statTotalVotes);
     } else if (this.sortOption === "likes-desc") {
-      filtered.sort((a, b) => b._statLikes - a._statLikes || b._statScore - a._statScore);
+      filtered.sort((a, b) => b._statLikes - a._statLikes || b._statScore - a._statScore || (b._statBayesian || 0) - (a._statBayesian || 0));
     } else if (this.sortOption === "super-desc") {
-      filtered.sort((a, b) => b._statSuper - a._statSuper || b._statScore - a._statScore);
+      filtered.sort((a, b) => b._statSuper - a._statSuper || b._statScore - a._statScore || (b._statBayesian || 0) - (a._statBayesian || 0));
     } else if (this.sortOption === "votes-desc") {
       filtered.sort((a, b) => b._statTotalVotes - a._statTotalVotes || b._statScore - a._statScore);
     } else if (this.sortOption === "approval-desc") {
-      filtered.sort((a, b) => b._statApproval - a._statApproval || b._statScore - a._statScore);
+      filtered.sort((a, b) => b._statApproval - a._statApproval || b._statScore - a._statScore || (b._statBayesian || 0) - (a._statBayesian || 0));
     } else if (this.sortOption === "title-asc") {
       filtered.sort((a, b) => (a.title || "").localeCompare(b.title || ""));
     }
@@ -541,6 +607,7 @@ export class CatalogCurator {
       localStorage.setItem("sv_curated_active_ids", JSON.stringify(Array.from(this.selectedIds)));
     } catch (e) {}
     this.updateCounters();
+    this.scheduleAutoSave();
   }
 
   /* ==========================================================================
@@ -647,6 +714,7 @@ export class CatalogCurator {
       localStorage.setItem("sv_curated_active_ids", JSON.stringify(Array.from(this.selectedIds)));
     } catch (e) {}
     this.render();
+    this.scheduleAutoSave();
   }
 
   invertFiltered() {
@@ -659,6 +727,7 @@ export class CatalogCurator {
       localStorage.setItem("sv_curated_active_ids", JSON.stringify(Array.from(this.selectedIds)));
     } catch (e) {}
     this.render();
+    this.scheduleAutoSave();
   }
 
   cleanSmartDuplicates() {
@@ -684,6 +753,7 @@ export class CatalogCurator {
       localStorage.setItem("sv_curated_active_ids", JSON.stringify(Array.from(this.selectedIds)));
     } catch (e) {}
     this.render();
+    this.scheduleAutoSave();
     this.showToast(`⚡ Pametni filter: ${cleanedCount} varijanti/duplikata isključeno.`);
   }
 
@@ -714,7 +784,8 @@ export class CatalogCurator {
           localStorage.setItem("sv_curated_active_ids", JSON.stringify(parsed));
         } catch (e) {}
         this.render();
-        this.showToast(`📥 Uvezeno ${this.selectedIds.size} majica! Kliknite 'SPREMI ODABIR' za trajno spremanje.`);
+        this.scheduleAutoSave();
+        this.showToast(`📥 Uvezeno ${this.selectedIds.size} majica!`);
       } else {
         this.showToast("⚠️ Nevažeći format JSON niza.");
       }
@@ -824,13 +895,20 @@ export class CatalogCurator {
       if (statsRes.ok) {
         const statsData = await statsRes.json();
         this.rankedItems = Array.isArray(statsData.topRanked) ? statsData.topRanked : [];
-        const totalVotes = statsData.totalVotes || 2254;
-        const totalVoters = statsData.uniqueVoters || 5;
+        const totalVotes = statsData.totalVotes || 2271;
+        const totalVoters = statsData.uniqueVoters || 6;
 
         if (this.rankedItems.length > 0) {
+          if (!this.masterCatalog || this.masterCatalog.length === 0) {
+            this.masterCatalog = [...this.rankedItems];
+          }
           this.rankedItems.forEach(it => {
             this.itemStatsMap.set(it.id, it);
           });
+        }
+
+        if (this.selectedIds.size === 0 && this.masterCatalog.length > 0) {
+          this.selectedIds = new Set(this.masterCatalog.map(it => it.id));
         }
 
         if (this.roundBadgeEl) {
@@ -842,7 +920,7 @@ export class CatalogCurator {
         const leadItems = document.getElementById("leadTotalItems");
         if (leadVotes) leadVotes.textContent = totalVotes.toLocaleString('hr-HR');
         if (leadVoters) leadVoters.textContent = totalVoters;
-        if (leadItems) leadItems.textContent = this.rankedItems.length;
+        if (leadItems) leadItems.textContent = this.rankedItems.length || this.masterCatalog.length;
 
         this.renderLeaderboardTable();
         this.render();
@@ -874,7 +952,42 @@ export class CatalogCurator {
     this.activeCategory = "ALL";
 
     this.render();
-    this.showToast(`🏆 Označeno Top ${this.selectedIds.size} finalista! Kliknite 'SPREMI ODABIR' ili 'POKRENI 2. KOLO'.`);
+    this.scheduleAutoSave();
+    this.showToast(`🏆 Označeno Top ${this.selectedIds.size} finalista!`);
+  }
+
+  selectItemsWithMinScore(minScore = 1) {
+    if ((!this.rankedItems || this.rankedItems.length === 0) && (!this.itemStatsMap || this.itemStatsMap.size === 0)) {
+      this.showToast("⚠️ Podaci o bodovima se učitavaju...");
+      this.loadRoundAndLeaderboard().then(() => this.selectItemsWithMinScore(minScore));
+      return;
+    }
+
+    const matchingIds = new Set();
+    this.masterCatalog.forEach(item => {
+      const st = this.itemStatsMap.get(item.id) || {};
+      const likes = st.likes !== undefined ? st.likes : (item.likes || 0);
+      const superlikes = st.superlikes !== undefined ? st.superlikes : (item.superlikes || 0);
+      const score = st.score !== undefined ? st.score : (likes + (superlikes * 3));
+      if (score >= minScore) {
+        matchingIds.add(item.id);
+      }
+    });
+
+    this.selectedIds = matchingIds;
+    try {
+      localStorage.setItem("sv_curated_active_ids", JSON.stringify(Array.from(this.selectedIds)));
+    } catch (e) {}
+
+    // Switch category filter to ALL so user sees all items
+    document.querySelectorAll(".cat-pill").forEach(p => p.classList.remove("active"));
+    const allPill = document.querySelector('.cat-pill[data-cat="ALL"]');
+    if (allPill) allPill.classList.add("active");
+    this.activeCategory = "ALL";
+
+    this.render();
+    this.scheduleAutoSave();
+    this.showToast(`★ Označeno ${this.selectedIds.size} majica s bodovima (≥ ${minScore} PTS)!`);
   }
 
   renderLeaderboardTable() {

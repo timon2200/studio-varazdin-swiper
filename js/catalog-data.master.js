@@ -115,10 +115,10 @@ export const CATALOG_DATA = [
     "image": "assets/optimized/SV Tee - Akcija Clapperboard.webp",
     "description": "Službeni filmski i cehovski motiv — Akcija Clapperboard.",
     "likes": 1,
-    "passes": 6,
+    "passes": 8,
     "superlikes": 0,
     "score": 1,
-    "totalVotes": 7,
+    "totalVotes": 9,
     "tags": [
       "studio",
       "streetwear",
@@ -258,11 +258,11 @@ export const CATALOG_DATA = [
     "category": "Studio",
     "image": "assets/optimized/SV Tee - Visually Articulate.webp",
     "description": "Službeni filmski i cehovski motiv — Visually Articulate.",
-    "likes": 2,
+    "likes": 3,
     "passes": 5,
     "superlikes": 0,
-    "score": 2,
-    "totalVotes": 7,
+    "score": 3,
+    "totalVotes": 8,
     "tags": [
       "studio",
       "streetwear",
@@ -510,11 +510,11 @@ export const CATALOG_DATA = [
     "category": "Towers",
     "image": "assets/optimized/T-Shirt - Tower Lisakova Kula Graffiti.webp",
     "description": "Varaždin grad zvonika — arhitektonski profil tornja Tower Lisakova Kula Graffiti.",
-    "likes": 1,
+    "likes": 2,
     "passes": 7,
     "superlikes": 1,
-    "score": 4,
-    "totalVotes": 9,
+    "score": 5,
+    "totalVotes": 10,
     "tags": [
       "towers",
       "streetwear",
@@ -799,10 +799,10 @@ export const CATALOG_DATA = [
     "image": "assets/optimized/SV_Utility_04_Brutalist_Grid_Back.webp",
     "description": "Filmska Produkcija Utility serija — tehnička matrica SV Utility 04 — Neo-Gothic Brutalist Grid.",
     "likes": 2,
-    "passes": 4,
+    "passes": 5,
     "superlikes": 1,
     "score": 5,
-    "totalVotes": 7,
+    "totalVotes": 8,
     "tags": [
       "utility",
       "streetwear",
@@ -1788,11 +1788,11 @@ export const CATALOG_DATA = [
     "category": "Creative",
     "image": "assets/optimized/CV Tee - Creative Block Rock Masked.webp",
     "description": "Autorski konceptualni streetwear dizajn — Creative Block Rock Masked.",
-    "likes": 1,
+    "likes": 2,
     "passes": 3,
     "superlikes": 2,
-    "score": 7,
-    "totalVotes": 6,
+    "score": 8,
+    "totalVotes": 7,
     "tags": [
       "creative",
       "streetwear",
@@ -2562,11 +2562,11 @@ export const CATALOG_DATA = [
     "category": "Creative",
     "image": "assets/optimized/CV Tee - Not Overthinking Storyboard Collage.webp",
     "description": "Autorski konceptualni streetwear dizajn — Not Overthinking Storyboard Collage.",
-    "likes": 3,
+    "likes": 4,
     "passes": 3,
     "superlikes": 1,
-    "score": 6,
-    "totalVotes": 7,
+    "score": 7,
+    "totalVotes": 8,
     "tags": [
       "creative",
       "streetwear",
@@ -2742,11 +2742,11 @@ export const CATALOG_DATA = [
     "category": "Creative",
     "image": "assets/optimized/SV_4Ref_02_Praying_Guardian_Riso_Back.webp",
     "description": "Autorski konceptualni streetwear dizajn — SV 4Ref 02 — Praying Guardian Riso.",
-    "likes": 2,
+    "likes": 3,
     "passes": 4,
     "superlikes": 1,
-    "score": 5,
-    "totalVotes": 7,
+    "score": 6,
+    "totalVotes": 8,
     "tags": [
       "creative",
       "streetwear",
@@ -2778,11 +2778,11 @@ export const CATALOG_DATA = [
     "category": "Creative",
     "image": "assets/optimized/SV_4Ref_04_Rearing_CyberGothic_Back.webp",
     "description": "Autorski konceptualni streetwear dizajn — SV 4Ref 04 — Rearing CyberGothic.",
-    "likes": 2,
+    "likes": 3,
     "passes": 4,
     "superlikes": 1,
-    "score": 5,
-    "totalVotes": 7,
+    "score": 6,
+    "totalVotes": 8,
     "tags": [
       "creative",
       "streetwear",
@@ -3079,8 +3079,50 @@ export const CATALOG_DATA = [
   },
   {
     "id": "sv-172",
+    "slug": "sv_lovers_01_dark_comix_blade_back",
+    "title": "The Lovers 01 — Dark Comix Blade",
+    "category": "Creative",
+    "image": "assets/optimized/SV_Lovers_01_Dark_Comix_Blade_Back.webp",
+    "description": "Autorski konceptualni streetwear dizajn — The Lovers 01 — Dark Comix Blade.",
+    "likes": 0,
+    "passes": 5,
+    "superlikes": 1,
+    "score": 3,
+    "totalVotes": 6,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-173",
+    "slug": "sv_lovers_02_dedication_fatal_kiss_back",
+    "title": "The Lovers 02 — Fatal Kiss Dedication",
+    "category": "Creative",
+    "image": "assets/optimized/SV_Lovers_02_Dedication_Fatal_Kiss_Back.webp",
+    "description": "Autorski konceptualni streetwear dizajn — The Lovers 02 — Fatal Kiss Dedication.",
+    "likes": 2,
+    "passes": 4,
+    "superlikes": 1,
+    "score": 5,
+    "totalVotes": 7,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-174",
     "slug": "sv_lovers_03_kneeling_martyr_back",
-    "title": "The Lovers Betrayal — Kneeling Martyr",
+    "title": "The Lovers 03 — Kneeling Martyr",
     "category": "Creative",
     "image": "assets/optimized/SV_Lovers_03_Kneeling_Martyr_Back.webp",
     "description": "Poljubac i oštrica u istoj sekundi. Oklopnik kleči na koplju dok mu dlanovi klize niz dršku, a ona drži krvavi vrh što izbija iz prsiju.",
@@ -3099,7 +3141,70 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-173",
+    "id": "sv-175",
+    "slug": "sv_lovers_04_acid_riso_betrayal_back",
+    "title": "The Lovers 04 — Acid Riso Betrayal",
+    "category": "Creative",
+    "image": "assets/optimized/SV_Lovers_04_Acid_Riso_Betrayal_Back.webp",
+    "description": "Autorski konceptualni streetwear dizajn — The Lovers 04 — Acid Riso Betrayal.",
+    "likes": 2,
+    "passes": 4,
+    "superlikes": 0,
+    "score": 2,
+    "totalVotes": 6,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-176",
+    "slug": "sv_lovers_05_rebirth_sacrifice_back",
+    "title": "The Lovers 05 — Rebirth Sacrifice",
+    "category": "Creative",
+    "image": "assets/optimized/SV_Lovers_05_Rebirth_Sacrifice_Back.webp",
+    "description": "Autorski konceptualni streetwear dizajn — The Lovers 05 — Rebirth Sacrifice.",
+    "likes": 0,
+    "passes": 6,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 6,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-177",
+    "slug": "sv_lovers_06_anamorphic_split_back",
+    "title": "The Lovers 06 — Anamorphic Split",
+    "category": "Creative",
+    "image": "assets/optimized/SV_Lovers_06_Anamorphic_Split_Back.webp",
+    "description": "Autorski konceptualni streetwear dizajn — The Lovers 06 — Anamorphic Split.",
+    "likes": 0,
+    "passes": 6,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 6,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-178",
     "slug": "cv_tee_they_who_dance",
     "title": "They Who Dance",
     "category": "Creative",
@@ -3117,7 +3222,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-174",
+    "id": "sv-179",
     "slug": "cv_tee_they_who_dance_celestial_grid",
     "title": "They Who Dance Celestial Grid",
     "category": "Creative",
@@ -3135,7 +3240,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-175",
+    "id": "sv-180",
     "slug": "cv_tee_they_who_dance_kinetic_back",
     "title": "They Who Dance Kinetic Back",
     "category": "Creative",
@@ -3153,7 +3258,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-176",
+    "id": "sv-181",
     "slug": "cv_tee_they_who_dance_music",
     "title": "They Who Dance Music",
     "category": "Creative",
@@ -3171,7 +3276,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-177",
+    "id": "sv-182",
     "slug": "cv_tee_they_who_dance_psychedelic_wave",
     "title": "They Who Dance Psychedelic Wave",
     "category": "Creative",
@@ -3189,7 +3294,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-178",
+    "id": "sv-183",
     "slug": "cv_tee_they_who_dance_rider_waves",
     "title": "They Who Dance Rider Waves",
     "category": "Creative",
@@ -3207,7 +3312,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-179",
+    "id": "sv-184",
     "slug": "cv_tee_utility_spec_dtf_bold_black_on_white",
     "title": "Utility Spec DTF Bold Black On White",
     "category": "Creative",
@@ -3225,7 +3330,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-180",
+    "id": "sv-185",
     "slug": "cv_tee_utility_spec_dtf_bold_white_on_black",
     "title": "Utility Spec DTF Bold White On Black",
     "category": "Creative",
@@ -3243,7 +3348,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-181",
+    "id": "sv-186",
     "slug": "cv_tee_utility_spec_print",
     "title": "Utility Spec Print",
     "category": "Creative",
@@ -3261,7 +3366,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-182",
+    "id": "sv-187",
     "slug": "cv_tee_utility_spec_print_black_on_white_runover",
     "title": "Utility Spec Print Black On White Runover",
     "category": "Creative",
@@ -3279,17 +3384,17 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-183",
+    "id": "sv-188",
     "slug": "cv_tee_utility_spec_print_white_on_black_brutalist",
     "title": "Utility Spec Print White On Black Brutalist",
     "category": "Creative",
     "image": "assets/optimized/CV Tee - Utility Spec Print - White on Black Brutalist.webp",
     "description": "Autorski konceptualni streetwear dizajn — Utility Spec Print White On Black Brutalist.",
-    "likes": 3,
+    "likes": 4,
     "passes": 4,
     "superlikes": 0,
-    "score": 3,
-    "totalVotes": 7,
+    "score": 4,
+    "totalVotes": 8,
     "tags": [
       "creative",
       "streetwear",
@@ -3297,7 +3402,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-184",
+    "id": "sv-189",
     "slug": "cv_tee_vertical_spine_type",
     "title": "Vertical Spine Type",
     "category": "Creative",
@@ -3315,7 +3420,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-185",
+    "id": "sv-190",
     "slug": "cv_tee_visually_articulate",
     "title": "Visually Articulate",
     "category": "Creative",
@@ -3333,7 +3438,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-186",
+    "id": "sv-191",
     "slug": "cv_tee_visually_articulate_calibration_back",
     "title": "Visually Articulate Calibration Back",
     "category": "Creative",
@@ -3351,7 +3456,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-187",
+    "id": "sv-192",
     "slug": "cv_tee_visually_articulate_maker",
     "title": "Visually Articulate Maker",
     "category": "Creative",
@@ -3369,7 +3474,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-188",
+    "id": "sv-193",
     "slug": "cv_tee_visually_articulate_skyline",
     "title": "Visually Articulate Skyline",
     "category": "Creative",
@@ -3387,7 +3492,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-189",
+    "id": "sv-194",
     "slug": "cv_tee_what_keeps_you_up_at_night",
     "title": "What Keeps You Up At Night",
     "category": "Creative",
@@ -3405,7 +3510,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-190",
+    "id": "sv-195",
     "slug": "cv_tee_what_keeps_you_up_hud",
     "title": "What Keeps You Up Hud",
     "category": "Creative",
@@ -3423,7 +3528,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-191",
+    "id": "sv-196",
     "slug": "cv_tee_when_you_cant_fall_asleep_botanical_paf",
     "title": "When You Cant Fall Asleep Botanical Paf",
     "category": "Creative",
@@ -3441,7 +3546,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-192",
+    "id": "sv-197",
     "slug": "cv_tee_when_you_cant_fall_asleep_cyber_hud",
     "title": "When You Cant Fall Asleep Cyber Hud",
     "category": "Creative",
@@ -3459,7 +3564,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-193",
+    "id": "sv-198",
     "slug": "cv_tee_when_you_cant_fall_asleep_grgur_nocturne",
     "title": "When You Cant Fall Asleep Grgur Nocturne",
     "category": "Creative",
@@ -3477,7 +3582,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-194",
+    "id": "sv-199",
     "slug": "cv_tee_when_you_cant_fall_asleep_raw_marker",
     "title": "When You Cant Fall Asleep Raw Marker",
     "category": "Creative",
@@ -3495,7 +3600,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-195",
+    "id": "sv-200",
     "slug": "cv_tee_when_you_cant_fall_asleep_sculpture_maker",
     "title": "When You Cant Fall Asleep Sculpture Maker",
     "category": "Creative",
@@ -3513,7 +3618,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-196",
+    "id": "sv-201",
     "slug": "cv_tee_when_you_cant_fall_asleep_star_chart",
     "title": "When You Cant Fall Asleep Star Chart",
     "category": "Creative",
@@ -3531,7 +3636,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-197",
+    "id": "sv-202",
     "slug": "cv_tee_the_alchemist_magic_work",
     "title": "the Alchemist Magic Work",
     "category": "Creative",
@@ -3549,7 +3654,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-198",
+    "id": "sv-203",
     "slug": "cv_tee_the_lovers_betrayal_tarot",
     "title": "the Lovers Betrayal Tarot",
     "category": "Creative",
@@ -3570,7 +3675,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-199",
+    "id": "sv-204",
     "slug": "cv_tee_the_magic_alchemist_tarot",
     "title": "the Magic Alchemist Tarot",
     "category": "Creative",
@@ -3588,7 +3693,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-200",
+    "id": "sv-205",
     "slug": "cv_tee_the_magic_alchemist_tarot_back",
     "title": "the Magic Alchemist Tarot Back",
     "category": "Creative",
@@ -3606,7 +3711,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-201",
+    "id": "sv-206",
     "slug": "cv_tee_the_magic_botanical_lithograph",
     "title": "the Magic Botanical Lithograph",
     "category": "Creative",
@@ -3624,7 +3729,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-202",
+    "id": "sv-207",
     "slug": "cv_tee_the_magic_dragon_red_seals",
     "title": "the Magic Dragon Red Seals",
     "category": "Creative",
@@ -3642,7 +3747,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-203",
+    "id": "sv-208",
     "slug": "cv_tee_the_magic_in_work_you_avoid",
     "title": "the Magic in Work You Avoid",
     "category": "Creative",
@@ -3660,7 +3765,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-204",
+    "id": "sv-209",
     "slug": "sv_artwear_atelier_alchimia_1181",
     "title": "Atelier Alchimia 1181",
     "category": "Artwear",
@@ -3678,7 +3783,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-205",
+    "id": "sv-210",
     "slug": "sv_artwear_atelier_modular_green",
     "title": "Atelier Modular Green",
     "category": "Artwear",
@@ -3696,7 +3801,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-206",
+    "id": "sv-211",
     "slug": "sv_tee_beram_galija_1474",
     "title": "Beram Galija 1474",
     "category": "Artwear",
@@ -3714,7 +3819,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-207",
+    "id": "sv-212",
     "slug": "sv_print_fisheye_ambition_black",
     "title": "Fisheye Ambition Black",
     "category": "Artwear",
@@ -3732,7 +3837,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-208",
+    "id": "sv-213",
     "slug": "sv_print_garda_purgar_flare",
     "title": "Garda Purgar Flare",
     "category": "Artwear",
@@ -3750,7 +3855,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-209",
+    "id": "sv-214",
     "slug": "sv_print_garda_purgar_sigil_white",
     "title": "Garda Purgar Sigil White",
     "category": "Artwear",
@@ -3768,7 +3873,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-210",
+    "id": "sv-215",
     "slug": "sv_print_garda_purgar_sunburst",
     "title": "Garda Purgar Sunburst",
     "category": "Artwear",
@@ -3786,7 +3891,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-211",
+    "id": "sv-216",
     "slug": "sv_tee_glagolitic_initial_s_gryphon",
     "title": "Glagolitic Initial S Gryphon",
     "category": "Artwear",
@@ -3804,7 +3909,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-212",
+    "id": "sv-217",
     "slug": "sv_tee_glagolitic_tarot_ideas_cant_die",
     "title": "Glagolitic Tarot Ideas Cant Die",
     "category": "Artwear",
@@ -3822,7 +3927,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-213",
+    "id": "sv-218",
     "slug": "sv_artwear_guardian_of_radimlja",
     "title": "Guardian of Radimlja",
     "category": "Artwear",
@@ -3840,7 +3945,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-214",
+    "id": "sv-219",
     "slug": "sv_artwear_inspired_by_craft_black",
     "title": "Inspired By Craft Black",
     "category": "Artwear",
@@ -3858,7 +3963,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-215",
+    "id": "sv-220",
     "slug": "sv_print_inspired_by_studio_black",
     "title": "Inspired By Studio Black",
     "category": "Artwear",
@@ -3876,7 +3981,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-216",
+    "id": "sv-221",
     "slug": "sv_tee_kameni_vitez_radimlja",
     "title": "Kameni Vitez Radimlja",
     "category": "Artwear",
@@ -3894,17 +3999,17 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-217",
+    "id": "sv-222",
     "slug": "sv_print_knight_sigil_white",
     "title": "Knight Sigil White",
     "category": "Artwear",
     "image": "assets/optimized/SV Print - Knight Sigil White.webp",
     "description": "Povijesni sakralni i heraldički motiv — Knight Sigil White.",
-    "likes": 5,
+    "likes": 6,
     "passes": 3,
     "superlikes": 0,
-    "score": 5,
-    "totalVotes": 8,
+    "score": 6,
+    "totalVotes": 9,
     "tags": [
       "artwear",
       "streetwear",
@@ -3912,7 +4017,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-218",
+    "id": "sv-223",
     "slug": "sv_artwear_knights_vow_cream",
     "title": "Knights Vow Cream",
     "category": "Artwear",
@@ -3930,7 +4035,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-219",
+    "id": "sv-224",
     "slug": "sv_print_knights_vow_cream",
     "title": "Knights Vow Cream",
     "category": "Artwear",
@@ -3948,7 +4053,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-220",
+    "id": "sv-225",
     "slug": "sv_print_maker_archives_white",
     "title": "Maker Archives White",
     "category": "Artwear",
@@ -3966,7 +4071,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-221",
+    "id": "sv-226",
     "slug": "sv_artwear_perun_sacred_geometry",
     "title": "Perun Sacred Geometry",
     "category": "Artwear",
@@ -3974,9 +4079,9 @@ export const CATALOG_DATA = [
     "description": "Povijesni sakralni i heraldički motiv — Perun Sacred Geometry.",
     "likes": 0,
     "passes": 6,
-    "superlikes": 0,
-    "score": 0,
-    "totalVotes": 6,
+    "superlikes": 1,
+    "score": 3,
+    "totalVotes": 7,
     "tags": [
       "artwear",
       "streetwear",
@@ -3984,7 +4089,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-222",
+    "id": "sv-227",
     "slug": "sv_tee_perunova_rozeta_gromovnik",
     "title": "Perunova Rozeta Gromovnik",
     "category": "Artwear",
@@ -4002,7 +4107,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-223",
+    "id": "sv-228",
     "slug": "sv_artwear_phoenix_of_1776",
     "title": "Phoenix of 1776",
     "category": "Artwear",
@@ -4020,7 +4125,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-224",
+    "id": "sv-229",
     "slug": "sv_tee_pozar_varazdina_1776_iz_pepela",
     "title": "Pozar Varazdina 1776 Iz Pepela",
     "category": "Artwear",
@@ -4038,7 +4143,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-225",
+    "id": "sv-230",
     "slug": "sv_tee_purgar_straza_night_march",
     "title": "Purgar Straza Night March",
     "category": "Artwear",
@@ -4056,7 +4161,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-226",
+    "id": "sv-231",
     "slug": "sv_print_silent_knight_black",
     "title": "Silent Knight Black",
     "category": "Artwear",
@@ -4074,7 +4179,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-227",
+    "id": "sv-232",
     "slug": "sv_print_silent_knight_studio_black",
     "title": "Silent Knight Studio Black",
     "category": "Artwear",
@@ -4092,7 +4197,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-228",
+    "id": "sv-233",
     "slug": "sv_print_silent_knight_studio_sunburst",
     "title": "Silent Knight Studio Sunburst",
     "category": "Artwear",
@@ -4110,7 +4215,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-229",
+    "id": "sv-234",
     "slug": "sv_tee_stari_grad_barokna_kula_master",
     "title": "Stari Grad Barokna Kula Master",
     "category": "Artwear",
@@ -4128,7 +4233,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-230",
+    "id": "sv-235",
     "slug": "sv_tee_studio_guild_pisemo_svjetlom",
     "title": "Studio Guild Pisemo Svjetlom",
     "category": "Artwear",
@@ -4146,7 +4251,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-231",
+    "id": "sv-236",
     "slug": "t_shirt_studio_varazdin_gpt2_dynamic_cluster",
     "title": "Studio Varazdin GPT2 Dynamic Cluster",
     "category": "Artwear",
@@ -4164,7 +4269,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-232",
+    "id": "sv-237",
     "slug": "t_shirt_studio_varazdin_gpt2_skyline_portrait",
     "title": "Studio Varazdin GPT2 Skyline Portrait",
     "category": "Artwear",
@@ -4182,7 +4287,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-233",
+    "id": "sv-238",
     "slug": "t_shirt_studio_varazdin_gpt2_totem_portrait",
     "title": "Studio Varazdin GPT2 Totem Portrait",
     "category": "Artwear",
@@ -4200,17 +4305,17 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-234",
+    "id": "sv-239",
     "slug": "sv_artwear_teratomorpha_sigil_white",
     "title": "Teratomorpha Sigil White",
     "category": "Artwear",
     "image": "assets/optimized/SV Artwear - Teratomorpha Sigil White.webp",
     "description": "Povijesni sakralni i heraldički motiv — Teratomorpha Sigil White.",
-    "likes": 4,
+    "likes": 5,
     "passes": 3,
     "superlikes": 1,
-    "score": 7,
-    "totalVotes": 8,
+    "score": 8,
+    "totalVotes": 9,
     "tags": [
       "artwear",
       "streetwear",
@@ -4218,7 +4323,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-235",
+    "id": "sv-240",
     "slug": "sv_artwear_teratomorphic_dragon_1404",
     "title": "Teratomorphic Dragon 1404",
     "category": "Artwear",
@@ -4236,7 +4341,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-236",
+    "id": "sv-241",
     "slug": "sv_tee_trakostyan_black_queen",
     "title": "Trakostyan Black Queen",
     "category": "Artwear",
@@ -4254,7 +4359,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-237",
+    "id": "sv-242",
     "slug": "sv_tee_varazdin_stari_grad_1181",
     "title": "Varazdin Stari Grad 1181",
     "category": "Artwear",
@@ -4272,7 +4377,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-238",
+    "id": "sv-243",
     "slug": "sv_tee_veles_lord_of_sacred_horns",
     "title": "Veles Lord of Sacred Horns",
     "category": "Artwear",
@@ -4290,7 +4395,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-239",
+    "id": "sv-244",
     "slug": "sv_artwear_vertical_spine_1181_black",
     "title": "Vertical Spine 1181 Black",
     "category": "Artwear",
@@ -4308,7 +4413,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-240",
+    "id": "sv-245",
     "slug": "sv_tee_vitez_sa_stecka_master",
     "title": "Vitez sa Stecka Master",
     "category": "Artwear",
@@ -4326,7 +4431,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-241",
+    "id": "sv-246",
     "slug": "sv_tee_zgoscanski_stecak_royal_fortress",
     "title": "Zgoscanski Stecak Royal Fortress",
     "category": "Artwear",
@@ -4344,7 +4449,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-242",
+    "id": "sv-247",
     "slug": "sv_tee_zmaj_hrvojev_misal_ultra",
     "title": "Zmaj Hrvojev Misal Ultra",
     "category": "Artwear",
@@ -4362,7 +4467,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-243",
+    "id": "sv-248",
     "slug": "sv_tee_zmaj_hrvojeva_misala",
     "title": "Zmaj Hrvojeva Misala",
     "category": "Artwear",
@@ -4380,7 +4485,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-244",
+    "id": "sv-249",
     "slug": "front_hit_35mm_film_frame_timecode",
     "title": "35MM Film Frame Timecode",
     "category": "Front Hits",
@@ -4398,7 +4503,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-245",
+    "id": "sv-250",
     "slug": "front_hit_ccc_middle_ground_blueprint_front",
     "title": "CCC Middle Ground Blueprint Front",
     "category": "Front Hits",
@@ -4416,7 +4521,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-246",
+    "id": "sv-251",
     "slug": "front_hit_ccc_they_who_dance_front",
     "title": "CCC They Who Dance Front",
     "category": "Front Hits",
@@ -4434,7 +4539,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-247",
+    "id": "sv-252",
     "slug": "front_hit_can_you_change_the_music_comix_front",
     "title": "Can You Change the Music Comix Front",
     "category": "Front Hits",
@@ -4452,7 +4557,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-248",
+    "id": "sv-253",
     "slug": "front_hit_cash_value_guilloche_front",
     "title": "Cash Value Guilloche Front",
     "category": "Front Hits",
@@ -4470,7 +4575,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-249",
+    "id": "sv-254",
     "slug": "front_hit_ccc_swiss_pocket_spec",
     "title": "Ccc. Swiss Pocket Spec",
     "category": "Front Hits",
@@ -4488,7 +4593,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-250",
+    "id": "sv-255",
     "slug": "collab_01_studio_varazdin_alchemist_laborer_front",
     "title": "Collab 01 — The Alchemist Front Hit",
     "category": "Front Hits",
@@ -4506,7 +4611,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-251",
+    "id": "sv-256",
     "slug": "collab_02_ccc_middle_ground_horizon_front",
     "title": "Collab 02 — Middle Ground Front Hit",
     "category": "Front Hits",
@@ -4524,7 +4629,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-252",
+    "id": "sv-257",
     "slug": "collab_03_ccc_morska_dekla_siren_front",
     "title": "Collab 03 — Morska Dekla Front Hit",
     "category": "Front Hits",
@@ -4542,7 +4647,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-253",
+    "id": "sv-258",
     "slug": "collab_03_studio_varazdin_semiotic_matrix_front",
     "title": "Collab 03 — Semiotic Matrix Front Hit",
     "category": "Front Hits",
@@ -4560,7 +4665,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-254",
+    "id": "sv-259",
     "slug": "collab_04_studio_varazdin_fire_1776_disaster_front",
     "title": "Collab 04 — Fire 1776 Front Hit",
     "category": "Front Hits",
@@ -4578,7 +4683,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-255",
+    "id": "sv-260",
     "slug": "collab_04_ccc_kinetic_madmen_front",
     "title": "Collab 04 — Kinetic Madmen Front Hit",
     "category": "Front Hits",
@@ -4596,7 +4701,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-256",
+    "id": "sv-261",
     "slug": "collab_05_studio_varazdin_midnight_reticle_front",
     "title": "Collab 05 — Midnight Reticle Front Hit",
     "category": "Front Hits",
@@ -4614,7 +4719,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-257",
+    "id": "sv-262",
     "slug": "collab_05_ccc_sleeping_angels_acid_front",
     "title": "Collab 05 — Sleeping Angels Front Hit",
     "category": "Front Hits",
@@ -4632,7 +4737,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-258",
+    "id": "sv-263",
     "slug": "collab_06_ccc_constrained_monolith_front",
     "title": "Collab 06 — Constrained Monolith Front Hit",
     "category": "Front Hits",
@@ -4650,7 +4755,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-259",
+    "id": "sv-264",
     "slug": "collab_06_studio_varazdin_vischer_panorama_front",
     "title": "Collab 06 — Vischer Panorama Front Hit",
     "category": "Front Hits",
@@ -4668,7 +4773,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-260",
+    "id": "sv-265",
     "slug": "collab_07_studio_varazdin_mountain_editor_front",
     "title": "Collab 07 — Mountain Editor Front Hit",
     "category": "Front Hits",
@@ -4686,7 +4791,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-261",
+    "id": "sv-266",
     "slug": "collab_08_ccc_iron_turtle_guild_front",
     "title": "Collab 08 — Iron Turtle Front Hit",
     "category": "Front Hits",
@@ -4704,7 +4809,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-262",
+    "id": "sv-267",
     "slug": "front_hit_constrained_environment_blueprint_front",
     "title": "Constrained Environment Blueprint Front",
     "category": "Front Hits",
@@ -4722,7 +4827,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-263",
+    "id": "sv-268",
     "slug": "front_hit_creative_block_1181_front",
     "title": "Creative Block 1181 Front",
     "category": "Front Hits",
@@ -4740,7 +4845,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-264",
+    "id": "sv-269",
     "slug": "front_hit_cyber_3d_angled_sv_monogram",
     "title": "Cyber 3d Angled SV Monogram",
     "category": "Front Hits",
@@ -4758,7 +4863,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-265",
+    "id": "sv-270",
     "slug": "front_hit_deadpan_knight_arrow_cartoon",
     "title": "Deadpan Knight Arrow Cartoon",
     "category": "Front Hits",
@@ -4776,7 +4881,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-266",
+    "id": "sv-271",
     "slug": "front_hit_everything_says_something_matrix_front",
     "title": "Everything Says Something Matrix Front",
     "category": "Front Hits",
@@ -4794,7 +4899,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-267",
+    "id": "sv-272",
     "slug": "front_hit_good_work_great_work_anvil_front",
     "title": "Good Work Great Work Anvil Front",
     "category": "Front Hits",
@@ -4812,17 +4917,17 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-268",
+    "id": "sv-273",
     "slug": "front_hit_grgur_ninski_pointing_finger_icon",
     "title": "Grgur Ninski Pointing Finger Icon",
     "category": "Front Hits",
     "image": "assets/optimized/Front Hit - Grgur Ninski Pointing Finger Icon.webp",
     "description": "Minimalistički prsni motiv — Grgur Ninski Pointing Finger Icon.",
     "likes": 3,
-    "passes": 3,
+    "passes": 4,
     "superlikes": 1,
     "score": 6,
-    "totalVotes": 7,
+    "totalVotes": 8,
     "tags": [
       "front hits",
       "streetwear",
@@ -4830,7 +4935,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-269",
+    "id": "sv-274",
     "slug": "heritage_combo_01_florijan_brutalist_front",
     "title": "Heritage Combo 01 — St. Florian Spec Front Hit",
     "category": "Front Hits",
@@ -4848,7 +4953,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-270",
+    "id": "sv-275",
     "slug": "heritage_combo_02_angels_comix_front",
     "title": "Heritage Combo 02 — Angelic Soundwave Front Hit",
     "category": "Front Hits",
@@ -4866,7 +4971,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-271",
+    "id": "sv-276",
     "slug": "heritage_combo_03_erdody_gothiclitho_front",
     "title": "Heritage Combo 03 — Probitati 1842 Front Hit",
     "category": "Front Hits",
@@ -4884,7 +4989,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-272",
+    "id": "sv-277",
     "slug": "heritage_combo_04_baroqueangel_botanical_front",
     "title": "Heritage Combo 04 — Cherub Nocturne Front Hit",
     "category": "Front Hits",
@@ -4902,7 +5007,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-273",
+    "id": "sv-278",
     "slug": "front_hit_horizontal_barcode_chest_tape",
     "title": "Horizontal Barcode Chest Tape",
     "category": "Front Hits",
@@ -4920,7 +5025,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-274",
+    "id": "sv-279",
     "slug": "front_hit_kittl_warped_circular_badge",
     "title": "Kittl Warped Circular Badge",
     "category": "Front Hits",
@@ -4938,7 +5043,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-275",
+    "id": "sv-280",
     "slug": "front_hit_knight_helmet_minimal_icon",
     "title": "Knight Helmet Minimal Icon",
     "category": "Front Hits",
@@ -4956,7 +5061,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-276",
+    "id": "sv-281",
     "slug": "front_minimal_knight_helmet_pure_minimal_icon",
     "title": "Knight Helmet — Pure Minimal Icon",
     "category": "Front Hits",
@@ -4974,7 +5079,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-277",
+    "id": "sv-282",
     "slug": "front_hit_middle_ground_blueprint_front",
     "title": "Middle Ground Blueprint Front",
     "category": "Front Hits",
@@ -4992,7 +5097,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-278",
+    "id": "sv-283",
     "slug": "front_hit_nocturne_dreams_0300_front",
     "title": "Nocturne Dreams 0300 Front",
     "category": "Front Hits",
@@ -5010,7 +5115,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-279",
+    "id": "sv-284",
     "slug": "front_hit_optical_lens_calibration_target",
     "title": "Optical Lens Calibration Target",
     "category": "Front Hits",
@@ -5028,7 +5133,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-280",
+    "id": "sv-285",
     "slug": "front_hit_paf_botanical_oak_branch",
     "title": "Paf Botanical Oak Branch",
     "category": "Front Hits",
@@ -5046,7 +5151,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-281",
+    "id": "sv-286",
     "slug": "front_hit_philosopher_knight_front",
     "title": "Philosopher Knight Front",
     "category": "Front Hits",
@@ -5064,7 +5169,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-282",
+    "id": "sv-287",
     "slug": "sv_4ref_01_sidequest_woodcut_front",
     "title": "SV 4Ref 01 — Side Quest Front Hit",
     "category": "Front Hits",
@@ -5082,7 +5187,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-283",
+    "id": "sv-288",
     "slug": "sv_4ref_02_praying_guardian_riso_front",
     "title": "SV 4Ref 02 — Praying Guardian Front Hit",
     "category": "Front Hits",
@@ -5100,7 +5205,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-284",
+    "id": "sv-289",
     "slug": "sv_4ref_03_dual_knights_vigil_front",
     "title": "SV 4Ref 03 — Dual Knights Front Hit",
     "category": "Front Hits",
@@ -5118,7 +5223,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-285",
+    "id": "sv-290",
     "slug": "sv_4ref_04_rearing_cybergothic_front",
     "title": "SV 4Ref 04 — CyberGothic Front Hit",
     "category": "Front Hits",
@@ -5136,7 +5241,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-286",
+    "id": "sv-291",
     "slug": "sv_4ref_05_grand_synthesis_master_front",
     "title": "SV 4Ref 05 — Grand Synthesis Front Hit",
     "category": "Front Hits",
@@ -5154,7 +5259,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-287",
+    "id": "sv-292",
     "slug": "front_hit_sv_maker_signature_script",
     "title": "SV Maker Signature Script",
     "category": "Front Hits",
@@ -5172,17 +5277,17 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-288",
+    "id": "sv-293",
     "slug": "sv_single_01_woodcut_knight_front",
     "title": "SV Single 01 — Woodcut Knight Front Hit",
     "category": "Front Hits",
     "image": "assets/optimized/SV_Single_01_Woodcut_Knight_Front.webp",
     "description": "Minimalistički prsni motiv — SV Single 01 — Woodcut Knight Front Hit.",
-    "likes": 4,
+    "likes": 5,
     "passes": 3,
     "superlikes": 0,
-    "score": 4,
-    "totalVotes": 7,
+    "score": 5,
+    "totalVotes": 8,
     "tags": [
       "front hits",
       "streetwear",
@@ -5190,7 +5295,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-289",
+    "id": "sv-294",
     "slug": "sv_single_02_praying_knight_front",
     "title": "SV Single 02 — Praying Knight Front Hit",
     "category": "Front Hits",
@@ -5208,7 +5313,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-290",
+    "id": "sv-295",
     "slug": "sv_single_03_sigil_brutalist_front",
     "title": "SV Single 03 — Brutalist Sigil Front Hit",
     "category": "Front Hits",
@@ -5226,17 +5331,17 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-291",
+    "id": "sv-296",
     "slug": "sv_single_04_riso_rearing_knight_front",
     "title": "SV Single 04 — Rearing Knight Front Hit",
     "category": "Front Hits",
     "image": "assets/optimized/SV_Single_04_Riso_Rearing_Knight_Front.webp",
     "description": "Minimalistički prsni motiv — SV Single 04 — Rearing Knight Front Hit.",
-    "likes": 2,
+    "likes": 3,
     "passes": 4,
     "superlikes": 2,
-    "score": 8,
-    "totalVotes": 8,
+    "score": 9,
+    "totalVotes": 9,
     "tags": [
       "front hits",
       "streetwear",
@@ -5244,7 +5349,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-292",
+    "id": "sv-297",
     "slug": "sv_single_05_spray_stencil_front",
     "title": "SV Single 05 — Spray Stencil Front Hit",
     "category": "Front Hits",
@@ -5262,7 +5367,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-293",
+    "id": "sv-298",
     "slug": "sv_single_06_botanical_arch_front",
     "title": "SV Single 06 — Botanical Arch Front Hit",
     "category": "Front Hits",
@@ -5280,7 +5385,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-294",
+    "id": "sv-299",
     "slug": "sv_single_07_gothic_metal_front",
     "title": "SV Single 07 — Gothic Metal Front Hit",
     "category": "Front Hits",
@@ -5298,7 +5403,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-295",
+    "id": "sv-300",
     "slug": "sv_single_08_acid_pop_front",
     "title": "SV Single 08 — Acid Pop Front Hit",
     "category": "Front Hits",
@@ -5316,7 +5421,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-296",
+    "id": "sv-301",
     "slug": "sv_single_09_comix_ink_front",
     "title": "SV Single 09 — Comix Ink Front Hit",
     "category": "Front Hits",
@@ -5334,7 +5439,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-297",
+    "id": "sv-302",
     "slug": "sv_utility_01_viewfinder_front",
     "title": "SV Utility 01 — Viewfinder Front Hit",
     "category": "Front Hits",
@@ -5352,7 +5457,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-298",
+    "id": "sv-303",
     "slug": "sv_utility_02_lens_specs_front",
     "title": "SV Utility 02 — Lens Specs Front Hit",
     "category": "Front Hits",
@@ -5370,7 +5475,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-299",
+    "id": "sv-304",
     "slug": "sv_utility_03_spine_stencil_front",
     "title": "SV Utility 03 — Spine Stencil Front Hit",
     "category": "Front Hits",
@@ -5388,7 +5493,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-300",
+    "id": "sv-305",
     "slug": "sv_utility_04_brutalist_grid_front",
     "title": "SV Utility 04 — Brutalist Grid Front Hit",
     "category": "Front Hits",
@@ -5406,7 +5511,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-301",
+    "id": "sv-306",
     "slug": "sv_utility_05_slate_box_front",
     "title": "SV Utility 05 — Slate Box Front Hit",
     "category": "Front Hits",
@@ -5424,7 +5529,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-302",
+    "id": "sv-307",
     "slug": "sv_utility_06_timecode_horizon_front",
     "title": "SV Utility 06 — Timecode Horizon Front Hit",
     "category": "Front Hits",
@@ -5442,7 +5547,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-303",
+    "id": "sv-308",
     "slug": "sv_utility_07_lab_seal_front",
     "title": "SV Utility 07 — Film Lab Seal Front Hit",
     "category": "Front Hits",
@@ -5460,7 +5565,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-304",
+    "id": "sv-309",
     "slug": "sv_utility_08_swiss_manifest_front",
     "title": "SV Utility 08 — Swiss Manifest Front Hit",
     "category": "Front Hits",
@@ -5478,7 +5583,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-305",
+    "id": "sv-310",
     "slug": "sv_utility_09_audio_waveform_front",
     "title": "SV Utility 09 — Audio Waveform Front Hit",
     "category": "Front Hits",
@@ -5496,7 +5601,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-306",
+    "id": "sv-311",
     "slug": "sv_utility_10_magazine_label_front",
     "title": "SV Utility 10 — Magazine Label Front Hit",
     "category": "Front Hits",
@@ -5514,7 +5619,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-307",
+    "id": "sv-312",
     "slug": "front_hit_stari_grad_fortress_vector_icon",
     "title": "Stari Grad Fortress Vector Icon",
     "category": "Front Hits",
@@ -5532,7 +5637,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-308",
+    "id": "sv-313",
     "slug": "front_hit_studio_nicholson_tech_spec",
     "title": "Studio Nicholson Tech Spec",
     "category": "Front Hits",
@@ -5550,7 +5655,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-309",
+    "id": "sv-314",
     "slug": "front_hit_studio_varazdin_cash_value_guilloche_front",
     "title": "Studio Varazdin Cash Value Guilloche Front",
     "category": "Front Hits",
@@ -5568,7 +5673,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-310",
+    "id": "sv-315",
     "slug": "front_hit_studio_varazdin_good_work_great_work_front",
     "title": "Studio Varazdin Good Work Great Work Front",
     "category": "Front Hits",
@@ -5586,7 +5691,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-311",
+    "id": "sv-316",
     "slug": "front_hit_studio_varazdin_nocturne_dreams_front",
     "title": "Studio Varazdin Nocturne Dreams Front",
     "category": "Front Hits",
@@ -5604,7 +5709,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-312",
+    "id": "sv-317",
     "slug": "front_minimal_studio_varazdin_part_of_ccc",
     "title": "Studio Varazdin Part of CCC",
     "category": "Front Hits",
@@ -5622,7 +5727,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-313",
+    "id": "sv-318",
     "slug": "front_hit_studio_varazdin_philosopher_knight_front",
     "title": "Studio Varazdin Philosopher Knight Front",
     "category": "Front Hits",
@@ -5640,7 +5745,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-314",
+    "id": "sv-319",
     "slug": "front_minimal_studio_varazdin_center_chest_large",
     "title": "Studio Varaždin — Center Chest Large",
     "category": "Front Hits",
@@ -5658,7 +5763,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-315",
+    "id": "sv-320",
     "slug": "front_minimal_studio_varazdin_minimal_box",
     "title": "Studio Varaždin — Minimal Bounding Box",
     "category": "Front Hits",
@@ -5676,7 +5781,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-316",
+    "id": "sv-321",
     "slug": "front_minimal_studio_varazdin_red_dot_accent",
     "title": "Studio Varaždin — Red Dot Accent",
     "category": "Front Hits",
@@ -5694,7 +5799,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-317",
+    "id": "sv-322",
     "slug": "front_minimal_studio_varazdin_stacked_two_tone",
     "title": "Studio Varaždin — Stacked Two-Tone",
     "category": "Front Hits",
@@ -5712,9 +5817,51 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-318",
+    "id": "sv-323",
+    "slug": "sv_lovers_01_dark_comix_blade_front",
+    "title": "The Lovers 01 — Blade Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SV_Lovers_01_Dark_Comix_Blade_Front.webp",
+    "description": "Minimalistički prsni motiv — The Lovers 01 — Blade Front Hit.",
+    "likes": 2,
+    "passes": 4,
+    "superlikes": 0,
+    "score": 2,
+    "totalVotes": 6,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-324",
+    "slug": "sv_lovers_02_dedication_fatal_kiss_front",
+    "title": "The Lovers 02 — Fatal Kiss Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SV_Lovers_02_Dedication_Fatal_Kiss_Front.webp",
+    "description": "Minimalistički prsni motiv — The Lovers 02 — Fatal Kiss Front Hit.",
+    "likes": 2,
+    "passes": 5,
+    "superlikes": 0,
+    "score": 2,
+    "totalVotes": 7,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-325",
     "slug": "sv_lovers_03_kneeling_martyr_front",
-    "title": "The Lovers — Martyr Front Hit",
+    "title": "The Lovers 03 — Martyr Front Hit",
     "category": "Front Hits",
     "image": "assets/optimized/SV_Lovers_03_Kneeling_Martyr_Front.webp",
     "description": "Minimalistički prsni motiv — The Lovers & Ideas Can't Die.",
@@ -5733,7 +5880,70 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-319",
+    "id": "sv-326",
+    "slug": "sv_lovers_04_acid_riso_betrayal_front",
+    "title": "The Lovers 04 — Acid Betrayal Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SV_Lovers_04_Acid_Riso_Betrayal_Front.webp",
+    "description": "Minimalistički prsni motiv — The Lovers 04 — Acid Betrayal Front Hit.",
+    "likes": 1,
+    "passes": 6,
+    "superlikes": 0,
+    "score": 1,
+    "totalVotes": 7,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-327",
+    "slug": "sv_lovers_05_rebirth_sacrifice_front",
+    "title": "The Lovers 05 — Rebirth Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SV_Lovers_05_Rebirth_Sacrifice_Front.webp",
+    "description": "Minimalistički prsni motiv — The Lovers 05 — Rebirth Front Hit.",
+    "likes": 0,
+    "passes": 6,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 6,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-328",
+    "slug": "sv_lovers_06_anamorphic_split_front",
+    "title": "The Lovers 06 — Anamorphic Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SV_Lovers_06_Anamorphic_Split_Front.webp",
+    "description": "Minimalistički prsni motiv — The Lovers 06 — Anamorphic Front Hit.",
+    "likes": 0,
+    "passes": 6,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 6,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "lovers",
+      "tarot",
+      "ideas-cant-die"
+    ]
+  },
+  {
+    "id": "sv-329",
     "slug": "front_hit_they_who_dance_kinetic_front",
     "title": "They Who Dance Kinetic Front",
     "category": "Front Hits",
@@ -5751,7 +5961,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-320",
+    "id": "sv-330",
     "slug": "front_minimal_varazdin_pure_red_script",
     "title": "Varaždin — Pure Red Script",
     "category": "Front Hits",
@@ -5769,7 +5979,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-321",
+    "id": "sv-331",
     "slug": "front_hit_vermilion_red_seal_stamp",
     "title": "Vermilion Red Seal Stamp",
     "category": "Front Hits",
@@ -5787,7 +5997,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-322",
+    "id": "sv-332",
     "slug": "front_hit_visually_articulate_calibration_front",
     "title": "Visually Articulate Calibration Front",
     "category": "Front Hits",
@@ -5805,7 +6015,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-323",
+    "id": "sv-333",
     "slug": "front_minimal_creative_collective_center_chest_black",
     "title": "cCc — Center Chest Minimal Black",
     "category": "Front Hits",
@@ -5823,7 +6033,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-324",
+    "id": "sv-334",
     "slug": "front_minimal_creative_collective_minimal_box",
     "title": "cCc — Minimal Bounding Box",
     "category": "Front Hits",
@@ -5841,7 +6051,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-325",
+    "id": "sv-335",
     "slug": "front_minimal_ccc_monogram_creative_collective",
     "title": "cCc. — Monogram Creative Collective",
     "category": "Front Hits",
@@ -5859,7 +6069,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-326",
+    "id": "sv-336",
     "slug": "front_minimal_studio_varazdin_lowercase_black",
     "title": "studio varaždin — Lowercase Minimal Black",
     "category": "Front Hits",
@@ -5877,7 +6087,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-327",
+    "id": "sv-337",
     "slug": "front_minimal_studio_varazdin_lowercase_bone",
     "title": "studio varaždin — Lowercase Minimal Bone",
     "category": "Front Hits",
@@ -5895,7 +6105,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-328",
+    "id": "sv-338",
     "slug": "front_hit_the_magic_alchemist_tarot_front",
     "title": "the Magic Alchemist Tarot Front",
     "category": "Front Hits",
@@ -5913,7 +6123,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-329",
+    "id": "sv-339",
     "slug": "design_1_knight_gpt_image_2",
     "title": "Design 1 Knight GPT Image 2",
     "category": "Experimental",
@@ -5931,7 +6141,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-330",
+    "id": "sv-340",
     "slug": "design_1_knight_gpt_image_2_5_flare",
     "title": "Design 1 Knight GPT Image 2.5 Flare",
     "category": "Experimental",
@@ -5949,7 +6159,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-331",
+    "id": "sv-341",
     "slug": "design_1_knight_gpt_image_2_5_sunburst",
     "title": "Design 1 Knight GPT Image 2.5 Sunburst",
     "category": "Experimental",
@@ -5967,17 +6177,17 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-332",
+    "id": "sv-342",
     "slug": "design_2_stari_grad_gpt_image_2",
     "title": "Design 2 Stari Grad GPT Image 2",
     "category": "Experimental",
     "image": "assets/optimized/design_2_stari_grad__gpt-image-2.webp",
     "description": "Eksperimentalni vizualni motiv — Design 2 Stari Grad GPT Image 2.",
-    "likes": 3,
+    "likes": 4,
     "passes": 4,
     "superlikes": 0,
-    "score": 3,
-    "totalVotes": 7,
+    "score": 4,
+    "totalVotes": 8,
     "tags": [
       "experimental",
       "streetwear",
@@ -5985,7 +6195,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-333",
+    "id": "sv-343",
     "slug": "design_2_stari_grad_gpt_image_2_5_flare",
     "title": "Design 2 Stari Grad GPT Image 2.5 Flare",
     "category": "Experimental",
@@ -6003,7 +6213,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-334",
+    "id": "sv-344",
     "slug": "design_2_stari_grad_gpt_image_2_5_sunburst",
     "title": "Design 2 Stari Grad GPT Image 2.5 Sunburst",
     "category": "Experimental",
@@ -6021,7 +6231,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-335",
+    "id": "sv-345",
     "slug": "design_3_church_towers_gpt_image_2",
     "title": "Design 3 Church Towers GPT Image 2",
     "category": "Experimental",
@@ -6039,7 +6249,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-336",
+    "id": "sv-346",
     "slug": "design_3_church_towers_gpt_image_2_5_flare",
     "title": "Design 3 Church Towers GPT Image 2.5 Flare",
     "category": "Experimental",
@@ -6057,7 +6267,7 @@ export const CATALOG_DATA = [
     ]
   },
   {
-    "id": "sv-337",
+    "id": "sv-347",
     "slug": "design_3_church_towers_gpt_image_2_5_sunburst",
     "title": "Design 3 Church Towers GPT Image 2.5 Sunburst",
     "category": "Experimental",
@@ -6072,6 +6282,1238 @@ export const CATALOG_DATA = [
       "experimental",
       "streetwear",
       "varazdin"
+    ]
+  },
+  {
+    "id": "sv-348",
+    "slug": "se5_01_spray_stencil_back",
+    "title": "SE5 01 — Red Spray Stencil",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_01_Spray_Stencil_Back.webp",
+    "description": "Crveni šablonski sprej-otisak SE5 s brutalističkim linijama.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-349",
+    "slug": "se5_02_swiss_manifest_back",
+    "title": "SE5 02 — Swiss Manifest Grid",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_02_Swiss_Manifest_Back.webp",
+    "description": "Švicarska višestupčana tipografska mreža SE5 s produkcijskim specifikacijama.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-350",
+    "slug": "se5_03_kinetic_wave_back",
+    "title": "SE5 03 — Kinetic Soundwave",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_03_Kinetic_Wave_Back.webp",
+    "description": "Kinetički zvučni valovi i modularni raster SE5.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-351",
+    "slug": "se5_04_gothic_litho_back",
+    "title": "SE5 04 — Heavy Gothic Litho",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_04_Gothic_Litho_Back.webp",
+    "description": "Teški litografski neogotički tisak SE5 s tamnim zrnom.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-352",
+    "slug": "se5_05_editorial_riso_back",
+    "title": "SE5 05 — Editorial Duotone Riso",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_05_Editorial_Riso_Back.webp",
+    "description": "Urednički dvobojni risografski otisak SE5.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-353",
+    "slug": "se5_minimal_01_ecru_back",
+    "title": "SE5 Minimal 01 — Monolith Ecru Canvas",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Minimal_01_Ecru_Back.webp",
+    "description": "Monolitni airbrush znak SE5 s vodoravnim prijelazom brzine na nebijeljenom ecru pamuku.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-354",
+    "slug": "se5_minimal_02_black_back",
+    "title": "SE5 Minimal 02 — Monolith Washed Black",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Minimal_02_Black_Back.webp",
+    "description": "Kredasto-bijeli monolit SE5 s vodoravnim rasterom brzine na ispranom crnom pamuku.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-355",
+    "slug": "se5_minimal_03_whitered_back",
+    "title": "SE5 Minimal 03 — Monolith Signal Red",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Minimal_03_WhiteRed_Back.webp",
+    "description": "Dvocvjetni aerodinamični motiv: crni airbrush SE i signalno crvena brojka 5 na optički bijelom platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-356",
+    "slug": "se5_quirky_01_se5_white_back",
+    "title": "SE5 Quirky 01 — Razor Hairline Wave",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Quirky_01_SE5_White_Back.webp",
+    "description": "Ekstremno tanka valovita linijska tipografija SE5 s laserskim prijelazom na optički bijelom platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-357",
+    "slug": "se5_quirky_02_se5_black_back",
+    "title": "SE5 Quirky 02 — Cyber Hairline Slant",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Quirky_02_SE5_Black_Back.webp",
+    "description": "Kosi kibernetički natpis SE5 u tankom linijskom rezu na ispranom crnom pamuku.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-358",
+    "slug": "se5_quirky_03_seeepeet_ecru_back",
+    "title": "SE5 Quirky 03 — SEEE PEET Calligraphy Wave",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Quirky_03_SEEEPEET_Ecru_Back.webp",
+    "description": "Valoviti kaligrafski stupovi SEEE PEET u visokom kontrastu na toplom ecru platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-359",
+    "slug": "se5_quirky_04_sepet_oatmeal_back",
+    "title": "SE5 Quirky 04 — SE PET Laser Diagonal",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Quirky_04_SEPET_Oatmeal_Back.webp",
+    "description": "Dijagonalni laserski ispis SE PET preko leđa na zrnatom sivom pamuku.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-360",
+    "slug": "se5_single_01_se5_razor_back",
+    "title": "SE5 Single 01 — Razor Slice",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Single_01_SE5_Razor_Back.webp",
+    "description": "Ekstremno visoka britva-tipografija SE5 s oštrim rezovima kroz vertikalne stupove.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-361",
+    "slug": "se5_single_02_se5_liquid_back",
+    "title": "SE5 Single 02 — Liquid Melting",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Single_02_SE5_Liquid_Back.webp",
+    "description": "Puhasta rastopljena slova SE5 s tekućim kapljicama i monolitnom masom.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-362",
+    "slug": "se5_single_03_seeepeet_flared_back",
+    "title": "SE5 Single 03 — SEEE PEET Flared Serif",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Single_03_SEEEPEET_Flared_Back.webp",
+    "description": "Izdužena serifna slova SEEE PEET s klinastim završecima i tankim strukom.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-363",
+    "slug": "se5_single_04_seeepeet_columns_back",
+    "title": "SE5 Single 04 — SEEE PEET Melting Columns",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Single_04_SEEEPEET_Columns_Back.webp",
+    "description": "Rastopljeni valoviti stupovi teksta SEEE PEET u teškom crnom rasteru.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-364",
+    "slug": "se5_single_05_sepet_warpedblock_back",
+    "title": "SE5 Single 05 — SE PET Warped Block",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Single_05_SEPET_WarpedBlock_Back.webp",
+    "description": "Zbijeni monolitni blok SE PET s vertikalnom distorzijom i teškim obrubom.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-365",
+    "slug": "se5_single_06_sepet_distressed_back",
+    "title": "SE5 Single 06 — SE PET Distressed Collegiate",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Single_06_SEPET_Distressed_Back.webp",
+    "description": "Pohabani koledž-natpis SE PET s pukotinama u tisku i grubim sitotiskarskim zrnom.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-366",
+    "slug": "se5_thin_01_se5_white_back",
+    "title": "SE5 Thin 01 — Razor Ultra-Thin",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Thin_01_SE5_White_Back.webp",
+    "description": "Ultra-tanka laserska tipografija SE5 na optički bijelom platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-367",
+    "slug": "se5_thin_02_se5_black_back",
+    "title": "SE5 Thin 02 — Cyber Ultra-Thin",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Thin_02_SE5_Black_Back.webp",
+    "description": "Ultra-tanki kosi kibernetički natpis SE5 na ispranom crnom pamuku.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-368",
+    "slug": "se5_thin_03_seeepeet_ecru_back",
+    "title": "SE5 Thin 03 — SEEE PEET Calligraphy Thin",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Thin_03_SEEEPEET_Ecru_Back.webp",
+    "description": "Ultra-tanki valoviti kaligrafski stupovi SEEE PEET na toplom ecru platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-369",
+    "slug": "se5_thin_04_sepet_oatmeal_back",
+    "title": "SE5 Thin 04 — SE PET Laser Thin",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Thin_04_SEPET_Oatmeal_Back.webp",
+    "description": "Ultra-tanki dijagonalni natpis SE PET na zrnatom sivom pamuku.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-370",
+    "slug": "se5_weird_01_se5_cybersigil_back",
+    "title": "SE5 Weird 01 — Liquid Cyber-Sigil",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Weird_01_SE5_CyberSigil_Back.webp",
+    "description": "Kibernetički sigil i tekući metalni raster SE5 na ispranom crnom pamuku.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-371",
+    "slug": "se5_weird_02_seeepeet_psychedelic_back",
+    "title": "SE5 Weird 02 — Psychedelic Horned Serif",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Weird_02_SEEEPEET_Psychedelic_Back.webp",
+    "description": "Psihodelična izvijena slova SEEE PEET s rogatim serifima na vintage pješčanom platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-372",
+    "slug": "se5_weird_03_sepet_origamiblade_back",
+    "title": "SE5 Weird 03 — Origami Razor Blade",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Weird_03_SEPET_OrigamiBlade_Back.webp",
+    "description": "Origami geometrijski rezovi i oštri britva-rubovi SE PET na bijelom platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-373",
+    "slug": "se5_weird_04_se5_meltingblob_back",
+    "title": "SE5 Weird 04 — Inverted Melting Blob",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Weird_04_SE5_MeltingBlob_Back.webp",
+    "description": "Obrnuti masni raster i rastopljena masa SE5 na ispranoj kadulja zelenoj podlozi.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-374",
+    "slug": "se5_weird_05_sepet_opartmoire_back",
+    "title": "SE5 Weird 05 — Op-Art Kinetic Moiré",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Weird_05_SEPET_OpArtMoire_Back.webp",
+    "description": "Optička iluzija i kinetički interferencijski moiré valovi SE PET na dubokoj crnoj podlozi.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-375",
+    "slug": "se5_weird_06_seeepeet_concretegrid_back",
+    "title": "SE5 Weird 06 — Modular Brutalist Grid",
+    "category": "Creative",
+    "image": "assets/optimized/SE5_Weird_06_SEEEPEET_ConcreteGrid_Back.webp",
+    "description": "Modularna betonska šablonska rešetka SEEE PEET na sirovom ecru platnu.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "creative",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-376",
+    "slug": "se5_01_spray_stencil_front",
+    "title": "SE5 01 — Spray Stencil Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_01_Spray_Stencil_Front.webp",
+    "description": "Šablonski prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-377",
+    "slug": "se5_02_swiss_manifest_front",
+    "title": "SE5 02 — Swiss Manifest Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_02_Swiss_Manifest_Front.webp",
+    "description": "Švicarski tehnički prsni blok SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-378",
+    "slug": "se5_03_kinetic_wave_front",
+    "title": "SE5 03 — Kinetic Wave Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_03_Kinetic_Wave_Front.webp",
+    "description": "Kinetički prsni val SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-379",
+    "slug": "se5_04_gothic_litho_front",
+    "title": "SE5 04 — Gothic Litho Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_04_Gothic_Litho_Front.webp",
+    "description": "Gotički prsni amblem SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-380",
+    "slug": "se5_05_editorial_riso_front",
+    "title": "SE5 05 — Editorial Riso Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_05_Editorial_Riso_Front.webp",
+    "description": "Risografski prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-381",
+    "slug": "se5_minimal_01_ecru_front",
+    "title": "SE5 Minimal 01 — Ecru Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Minimal_01_Ecru_Front.webp",
+    "description": "Mali airbrush znak SE5 i mikrootisak Studio Varaždin na prsima.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-382",
+    "slug": "se5_minimal_02_black_front",
+    "title": "SE5 Minimal 02 — Black Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Minimal_02_Black_Front.webp",
+    "description": "Kredasti prsni znak SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-383",
+    "slug": "se5_minimal_03_whitered_front",
+    "title": "SE5 Minimal 03 — White & Red Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Minimal_03_WhiteRed_Front.webp",
+    "description": "Dvobojni prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-384",
+    "slug": "se5_quirky_01_se5_white_front",
+    "title": "SE5 Quirky 01 — Razor Wave Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Quirky_01_SE5_White_Front.webp",
+    "description": "Prsni tankolinijski motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-385",
+    "slug": "se5_quirky_02_se5_black_front",
+    "title": "SE5 Quirky 02 — Cyber Slant Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Quirky_02_SE5_Black_Front.webp",
+    "description": "Kosi prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-386",
+    "slug": "se5_quirky_03_seeepeet_ecru_front",
+    "title": "SE5 Quirky 03 — Calligraphy Wave Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Quirky_03_SEEEPEET_Ecru_Front.webp",
+    "description": "Kaligrafski prsni motiv SEEE PEET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-387",
+    "slug": "se5_quirky_04_sepet_oatmeal_front",
+    "title": "SE5 Quirky 04 — Laser Diagonal Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Quirky_04_SEPET_Oatmeal_Front.webp",
+    "description": "Dijagonalni prsni natpis SE PET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-388",
+    "slug": "se5_single_01_se5_razor_front",
+    "title": "SE5 Single 01 — Razor Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Single_01_SE5_Razor_Front.webp",
+    "description": "Prsni britva-motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-389",
+    "slug": "se5_single_02_se5_liquid_front",
+    "title": "SE5 Single 02 — Liquid Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Single_02_SE5_Liquid_Front.webp",
+    "description": "Rastopljeni prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-390",
+    "slug": "se5_single_03_seeepeet_flared_front",
+    "title": "SE5 Single 03 — SEEE PEET Flared Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Single_03_SEEEPEET_Flared_Front.webp",
+    "description": "Prsni monogram SEEE PEET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-391",
+    "slug": "se5_single_04_seeepeet_columns_front",
+    "title": "SE5 Single 04 — SEEE PEET Columns Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Single_04_SEEEPEET_Columns_Front.webp",
+    "description": "Valoviti prsni motiv SEEE PEET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-392",
+    "slug": "se5_single_05_sepet_warpedblock_front",
+    "title": "SE5 Single 05 — SE PET Warped Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Single_05_SEPET_WarpedBlock_Front.webp",
+    "description": "Zbijeni prsni blok SE PET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-393",
+    "slug": "se5_single_06_sepet_distressed_front",
+    "title": "SE5 Single 06 — SE PET Distressed Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Single_06_SEPET_Distressed_Front.webp",
+    "description": "Koledž prsni natpis SE PET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-394",
+    "slug": "se5_thin_01_se5_white_front",
+    "title": "SE5 Thin 01 — Razor Ultra-Thin Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Thin_01_SE5_White_Front.webp",
+    "description": "Ultra-tanki prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-395",
+    "slug": "se5_thin_02_se5_black_front",
+    "title": "SE5 Thin 02 — Cyber Ultra-Thin Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Thin_02_SE5_Black_Front.webp",
+    "description": "Ultra-tanki kosi prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-396",
+    "slug": "se5_thin_03_seeepeet_ecru_front",
+    "title": "SE5 Thin 03 — SEEE PEET Calligraphy Thin Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Thin_03_SEEEPEET_Ecru_Front.webp",
+    "description": "Ultra-tanki kaligrafski prsni motiv SEEE PEET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-397",
+    "slug": "se5_thin_04_sepet_oatmeal_front",
+    "title": "SE5 Thin 04 — SE PET Laser Thin Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Thin_04_SEPET_Oatmeal_Front.webp",
+    "description": "Ultra-tanki dijagonalni prsni natpis SE PET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-398",
+    "slug": "se5_weird_01_se5_cybersigil_front",
+    "title": "SE5 Weird 01 — Cyber-Sigil Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Weird_01_SE5_CyberSigil_Front.webp",
+    "description": "Kibernetički prsni sigil SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-399",
+    "slug": "se5_weird_02_seeepeet_psychedelic_front",
+    "title": "SE5 Weird 02 — Psychedelic Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Weird_02_SEEEPEET_Psychedelic_Front.webp",
+    "description": "Psihodelični prsni motiv SEEE PEET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-400",
+    "slug": "se5_weird_03_sepet_origamiblade_front",
+    "title": "SE5 Weird 03 — Origami Blade Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Weird_03_SEPET_OrigamiBlade_Front.webp",
+    "description": "Origami prsni znak SE PET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-401",
+    "slug": "se5_weird_04_se5_meltingblob_front",
+    "title": "SE5 Weird 04 — Melting Blob Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Weird_04_SE5_MeltingBlob_Front.webp",
+    "description": "Rastopljeni prsni motiv SE5 s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-402",
+    "slug": "se5_weird_05_sepet_opartmoire_front",
+    "title": "SE5 Weird 05 — Op-Art Moiré Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Weird_05_SEPET_OpArtMoire_Front.webp",
+    "description": "Kinetički moiré prsni motiv SE PET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
+    ]
+  },
+  {
+    "id": "sv-403",
+    "slug": "se5_weird_06_seeepeet_concretegrid_front",
+    "title": "SE5 Weird 06 — Brutalist Grid Front Hit",
+    "category": "Front Hits",
+    "image": "assets/optimized/SE5_Weird_06_SEEEPEET_ConcreteGrid_Front.webp",
+    "description": "Modularni prsni raster SEEE PEET s mikrootiskom Studio Varaždin.",
+    "likes": 0,
+    "passes": 0,
+    "superlikes": 0,
+    "score": 0,
+    "totalVotes": 0,
+    "tags": [
+      "front hits",
+      "streetwear",
+      "varazdin",
+      "se5",
+      "typography",
+      "meme",
+      "minimal"
     ]
   }
 ];
